@@ -1,0 +1,29 @@
+day -1 160 days coding
+
+find second largest element--
+
+naive approach-
+	i. first sort the array
+	ii. travese from n-2 to 0 
+	iii. check arr[i]!= arr[n-1]
+	iv. return arr[i]
+
+better approach-
+	i. take largest and second largest
+	ii. traverse on array	-- check arr[i]>maxi1  largest=arr[i]
+	iii. travese array -- arr[i]>maxi2 && arr[i]!=maxi1  secondlargest
+
+optimal approach-
+	i.take largest and second largest
+	ii. traverse array -- check largest element
+	iii. traverse array -second largest and use a pointer c++ 
+	iv. if c==0 then true;
+
+	second approach of this--
+	i. largest and second largest
+	ii.traverse array
+		arr[i]>largest
+		second largest=largest;
+		largest=arr[i]
+	else if arr[i]<largest && arr[i]>second largest
+		secondlargest=arr[i]
